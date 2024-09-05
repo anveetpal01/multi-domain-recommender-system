@@ -1,0 +1,287 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Page Transition Animations */
+.fade-in {
+    animation: fadeIn 0.6s ease-in forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
+/* Light Mode - Rainbow Theme */
+body.light-mode {
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Header Styling for Light Mode */
+body.light-mode header {
+    background: linear-gradient(135deg, #ff8a80, #ff80ab, #ea80fc, #8c9eff, #80d8ff, #80e8b9, #ccff90);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+body.light-mode header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling for Light Mode */
+body.light-mode nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+body.light-mode nav ul li {
+    margin: 0 20px;
+}
+
+body.light-mode nav ul li a {
+    background-color: #fff;
+    color: #333;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+body.light-mode nav ul li a:hover {
+    background-image: linear-gradient(45deg, #ff8a80, #ff80ab, #ea80fc, #8c9eff, #80d8ff, #80e8b9, #ccff90);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Main Content Styling for Light Mode */
+body.light-mode main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+body.light-mode .intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Footer Styling for Light Mode */
+body.light-mode footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Dark Mode - Red Hot Theme */
+body.dark-mode {
+    background: #1c1c1c;
+    color: #e0e0e0;
+}
+
+/* Header Styling for Dark Mode */
+body.dark-mode header {
+    background: linear-gradient(135deg, #b30000, #660000);
+    color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+body.dark-mode header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling for Dark Mode */
+body.dark-mode nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+body.dark-mode nav ul li {
+    margin: 0 20px;
+}
+
+body.dark-mode nav ul li a {
+    background-color: #660000;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+body.dark-mode nav ul li a:hover {
+    background-color: #b30000;
+    color: #fff;
+}
+
+/* Main Content Styling for Dark Mode */
+body.dark-mode main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+body.dark-mode .intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #999;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Footer Styling for Dark Mode */
+body.dark-mode footer {
+    background-color: #333;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Theme Button Styling */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff8a80;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff5252;
+}
+
+body.light-mode .theme-btn {
+    background-color: #ff8a80;
+    color: #333;
+}
+
+body.dark-mode .theme-btn {
+    background-color: #b30000;
+    color: #fff;
+}
+
+/* Add transitions to smooth theme change */
+header, nav ul li a {
+    transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+}
