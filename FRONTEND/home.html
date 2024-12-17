@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Domain Recommender System</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-mode"> <!-- Default is light mode -->
+    <header>
+        <h1>Multi-Domain Recommender System</h1>
+        <button id="theme-toggle" class="theme-btn">
+            <img src="images/logo.svg" alt="Switch Theme" width="30px" height="30px">
+        </button>
+        
+        <nav>
+            <ul>
+                <li><a href="movies.html" class="image-link"><img src="images/movie-color.svg" alt="Movies" width="60px" height="60px"/><div class="tooltip">MOVIES</div></a></li>
+                <li><a href="songs.html" class="image-link"><img src="images/song-color.svg" alt="Songs" width="60px" height="60px"/><div class="tooltip">SONGS</div></a></li>
+                <li><a href="books.html" class="image-link"><img src="images/books-color.svg" alt="Books" width="60px" height="60px"/><div class="tooltip">BOOKS</div></a></li>
+                <li><a href="courses.html" class="image-link"><img src="images/course-color.svg" alt="Courses" width="60px" height="60px"/><div class="tooltip">COURSES</div></a></li>
+                <li><a href="colleges.html" class="image-link"><img src="images/college-color.svg" alt="Colleges" width="60px" height="60px"/><div class="tooltip">COLLEGES</div></a></li>
+            </ul>
+        </nav>
+        
+        <br>
+
+        <div class="user-profile">
+            
+            <span class="username" id="welcomeUser">Welcome, User!</span>
+        </div>
+        
+
+        <section class="carousel">
+            <h2>Featured Recommendations</h2>
+            <div class="carousel-container">
+                <!-- Example items -->
+                <div class="carousel-item">
+                    <img src="images/featured-movie.jpg" alt="Featured Movie">
+                    <p>Top Movie: Inception</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/featured-song.jpg" alt="Featured Song">
+                    <p>Top Song: Blinding Lights</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Explore Your Interests</h2>
+            <p>Select a category to get personalized recommendations.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Multi-Domain Recommender System. All rights reserved.</p>
+    </footer>
+
+    <main>
+        <section class="intro fade-in-up"> <!-- Adding fade-in-up class -->
+            <h2>Explore Your Interests</h2>
+            <p>Select a category to get personalized recommendations.</p>
+        </section>
+    
+        <section class="fade-in-up">
+            <h2>Movies</h2>
+            <p>Get recommendations based on your favorite genres.</p>
+        </section>
+    
+        <section class="fade-in-up">
+            <h2>Songs</h2>
+            <p>Discover songs that match your mood and style.</p>
+        </section>
+    
+        <section class="fade-in-up">
+            <h2>Books</h2>
+            <p>Find your next great read with our book recommendations.</p>
+        </section>
+    
+        <section class="fade-in-up">
+            <h2>Courses</h2>
+            <p>Explore various educational courses tailored for you.</p>
+        </section>
+    
+        <section class="fade-in-up">
+            <h2>Colleges</h2>
+            <p>Get personalized college recommendations based on your interests.</p>
+        </section>
+    </main>
+    
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('welcomeUser').textContent = 'Welcome, ' + username + '!';
+        }
+    });
+</script>
+</body>
+</html>

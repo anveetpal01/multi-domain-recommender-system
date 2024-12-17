@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3b82f6, #9333ea, #ff2d55, #ff5733);
+    background-size: 400% 400%;
+    animation: bgAnimation 20s linear infinite;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s infinite alternate;
+}
+
+button {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: #ff2d55;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2d55;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff2d55;
+    }
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    margin: 10px 0;
+    width: auto;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px #ff5733;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

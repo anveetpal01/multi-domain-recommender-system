@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Library</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-mode fade-in">
+    <header>
+        <h1>Movies Library</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="image-link"><img id="home-icon" src="images/home-color.svg" alt="Home" width="60px" height="60px"><div class="tooltip">HOME</div></a></li>
+                <li><a href="songs.html" class="image-link"><img src="images/song-color.svg" alt="Songs" width="60px" height="60px"/><div class="tooltip">Songs</div></a></li>
+                <li><a href="books.html" class="image-link"><img src="images/books-color.svg" alt="Books" width="60px" height="60px"/><div class="tooltip">Books</div></a></li>
+                <li><a href="courses.html" class="image-link"><img src="images/course-color.svg" alt="Courses" width="60px" height="60px"/><div class="tooltip">Courses</div></a></li>
+                <li><a href="colleges.html" class="image-link"><img src="images/college-color.svg" alt="Colleges" width="60px" height="60px"/><div class="tooltip">Colleges</div></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Filters Section -->
+        <div class="filters">
+            <label for="genre">Genre:</label>
+            <select id="genre"></select>
+
+            <label for="release-year">Release Year:</label>
+            <select id="release-year"></select>
+
+            <label for="actors">Actors/Actresses:</label>
+            <input type="text" id="actors" placeholder="Enter name...">
+
+            <label for="directors">Directors:</label>
+            <input type="text" id="directors" placeholder="Enter name...">
+
+            <label for="ratings">Ratings:</label>
+            <select id="ratings"></select>
+
+            <label for="trending">Trending/Popular:</label>
+            <select id="trending">
+                <option value="trending">Trending</option>
+                <option value="popular">Popular</option>
+            </select>
+
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+            </select>
+
+            <label for="duration">Duration:</label>
+            <select id="duration">
+                <option value="short">Short</option>
+                <option value="standard">Standard</option>
+                <option value="long">Long</option>
+            </select>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" placeholder="Enter country...">
+
+            <label for="awards">Awards:</label>
+            <input type="text" id="awards" placeholder="Enter award...">
+        </div>
+
+        <!-- Container for movie data -->
+        <div id="movie-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Movies Library. All rights reserved.</p>
+    </footer>
+
+    <!-- Infinite Scroll and Animation JavaScript -->
+    <script src="js/script.js"></script>    
+</body>
+</html>
+ 
