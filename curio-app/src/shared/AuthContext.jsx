@@ -13,15 +13,12 @@ export function AuthProvider({ children }) {
     }
   })
 
-  function store(nextUser) {
-    setUser(nextUser)
-    localStorage.setItem('curio-user', JSON.stringify(nextUser))
-  }
-
   function persist(data) {
+    const nextUser = { name: data.name, email: data.email, role: data.role }
     setToken(data.token)
+    setUser(nextUser)
     localStorage.setItem('curio-token', data.token)
-    store({ name: data.name, email: data.email, role: data.role, onboarded: !!data.onboarded })
+    localStorage.setItem('curio-user', JSON.stringify(nextUser))
   }
 
   function logout() {
@@ -33,13 +30,9 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (!token) return
-    apiGet('/auth/me', token)
-      .then((me) =>
-        store({ name: me.name, email: me.email, role: me.role, onboarded: !!me.onboarded }),
-      )
-      .catch((err) => {
-        if (err.status === 401 || err.status === 403) logout()
-      })
+    apiGet('/auth/me', token).catch((err) => {
+      if (err.status === 401) logout()
+    })
   }, [token])
 
   async function login(email, password) {
@@ -55,30 +48,13 @@ export function AuthProvider({ children }) {
   }
 
   async function loginWithGoogle(idToken) {
-    const data = await apiPost('/auth/google', { idToken })
-    persist(data)
-    return data
-  }
-
-  async function setOnboarded() {
-    await apiPost('/auth/onboarded', {}, token)
-    store({ ...(user || {}), onboarded: true })
-  }
+  const data = await apiPost('/auth/google', { idToken })
+  persist(data)
+  return data
+}
 
   return (
-    <AuthContext.Provider
-      value={{
-        token,
-        user,
-        isAuthed: !!token,
-        onboarded: !!user?.onboarded,
-        login,
-        register,
-        loginWithGoogle,
-        setOnboarded,
-        logout,
-      }}
-    >
+    <AuthContext.Provider value={{ token, user, isAuthed: !!token, login, register, loginWithGoogle, logout }}>
       {children}
     </AuthContext.Provider>
   )
