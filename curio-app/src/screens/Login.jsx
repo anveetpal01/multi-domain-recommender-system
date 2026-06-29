@@ -5,14 +5,6 @@ import { useLibrary } from '../shared/LibraryContext'
 import { cx } from '../shared/util'
 import s from './Login.module.css'
 import { useEffect, useRef } from 'react'
-const GoogleMark = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-    <path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.9 3.2-7.9z" />
-    <path fill="#34A853" d="M12 23c2.9 0 5.4-1 7.2-2.6l-3.6-2.7c-1 .7-2.3 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23z" />
-    <path fill="#FBBC05" d="M6 14.4a6.6 6.6 0 0 1 0-4.2V7.4H2.3a11 11 0 0 0 0 9.8z" />
-    <path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.4L6 10.2c.9-2.6 3.2-4.8 6-4.8z" />
-  </svg>
-)
 
 export default function Login() {
   const { login, register, loginWithGoogle, isAuthed } = useAuth()
@@ -51,7 +43,7 @@ export default function Login() {
           }
         },
       })
-      window.google.accounts.id.renderButton(googleBtn.current, {
+      window.google.accounts.id.renderButton(googleBtnRef.current, {
         theme: 'outline',
         size: 'large',
         width: 320,
@@ -122,9 +114,7 @@ export default function Login() {
           </p>
 
           <div className={s.oauth}>
-            <button type="button" className={s.oauthBtn} onClick={socialSoon}>
-              <GoogleMark /> Continue with Google
-            </button>
+            <div ref={googleBtnRef} />
           </div>
 
           <div className={s.divider}>
