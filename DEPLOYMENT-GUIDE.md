@@ -1,235 +1,128 @@
-# Curio — Deployment Guide (truly free)
+# Curio — Deployment Guide (truly free, NO credit card)
 
-Stack (sab free, no trial):
-- **Frontend** (React) → **Cloudflare Pages** (free, HTTPS, Git se auto-deploy)
-- **Backend** (Spring Boot) → **Oracle Cloud Always Free VM** (always-on, free)
-- **Database** → **PostgreSQL** usi Oracle VM pe (free, no extra account)
-- **HTTPS for backend** → **Caddy + DuckDNS** (free domain + auto SSL)
+Stack (sab free, no card, no trial):
+- **Frontend** (React) → **Render — Static Site** (free, HTTPS, no sleep)
+- **Backend** (Spring Boot) → **Render — Web Service (Docker)** (free, HTTPS auto; 15-min inactivity pe sleep)
+- **Database** → **Neon** (free serverless PostgreSQL, no card)
 
 ```
-[Cloudflare Pages]  https://yourapp.pages.dev   (React)
-        │  fetch https://yourapi.duckdns.org/api/...
+[Render Static Site]  https://curio.onrender.com        (React, HTTPS)
+        │  fetch https://curio-api.onrender.com/api/...
         ▼
-[Oracle VM]  Caddy (443, auto-HTTPS)  →  Spring Boot (localhost:8080)  →  Postgres (localhost:5432)
+[Render Web Service]  Spring Boot (HTTPS auto)  ──►  [Neon]  PostgreSQL (free)
 ```
 
-> **HTTPS kyun zaroori:** Cloudflare Pages HTTPS pe hai. HTTPS site sirf HTTPS backend ko call kar sakti hai (HTTP backend = browser block "mixed content"). Isliye backend pe Caddy se HTTPS lagana zaroori hai.
+> **Sabse bada plus:** Render khud HTTPS deta hai — to koi VM, SSH, Caddy, DuckDNS, domain kuch nahi chahiye. Sab GitHub se auto-deploy.
+>
+> **Ek catch:** free backend (Web Service) **15 min inactivity ke baad so jata hai** → uske baad pehli request ~50 sec slow (cold start), phir normal. (Frontend Static Site kabhi nahi sota.)
 
 ---
 
 ## Maine code me kya ready kiya
-- `application.yml` — port, CORS origin, JWT secret, Google id sab **env vars** se (dev defaults ke saath).
-- `application-prod.yml` (naya) — **Postgres** profile (`SPRING_PROFILES_ACTIVE=prod` se on hota hai), env vars se DB.
-- Tumhe code me kuch change nahi karna — bas env vars set karne hain server pe.
+- `auth/Dockerfile` — Render iske through backend build+run karega.
+- `application.yml` / `application-prod.yml` — port, DB, JWT, Google, CORS sab **env vars** se. Code touch nahi karna; bas Render pe env vars set karne hain.
 
 ---
 
-## Part A — GitHub par code
-
-Do alag folder hain: `curio-app` (frontend) aur `auth` (backend). Inhe ek hi repo me (ya do repos me) GitHub pe push kar do. Ek repo me dono theek hai.
-
-`.gitignore` me ye zaroor ho (warna secrets/build-junk commit ho jayega):
-```
-# frontend
-curio-app/node_modules
-curio-app/dist
-# backend
-auth/target
-auth/data         # H2 dev db
-# secrets (optional)
-*.local
-```
+## Part A — GitHub (ho gaya ✅)
+Code yahan hai: `https://github.com/anveetpal01/multi-domain-recommender-system`
+(`curio-app/` = frontend, `auth/` = backend)
 
 ---
 
-## Part B — Oracle Cloud Always Free VM banao
+## Part B — Database: Neon (free Postgres, no card)
 
-1. [cloud.oracle.com](https://cloud.oracle.com) → sign up (card verification ke liye lagega, **charge nahi hoga** — Always Free quota).
-2. **Compute → Instances → Create Instance**:
-   - Image: **Ubuntu 22.04** (ya 24.04)
-   - Shape: **Ampere (ARM) — VM.Standard.A1.Flex** → "Always Free eligible" (1 OCPU / 6 GB se start, ya zyada free quota me)
-   - **SSH keys**: apni public key add karo (ya generate karke private key download karo)
-   - Create → thodi der me VM ready → **Public IP** note kar lo.
-3. **Ports open karo (zaroori):**
-   - Instance → **VCN → Security List → Add Ingress Rules**: Source `0.0.0.0/0`, TCP ports **80** aur **443**.
-   - (8080 open karne ki zaroorat nahi — backend localhost pe rahega, Caddy 443 pe.)
-
----
-
-## Part C — VM setup (SSH karke)
-
-SSH:
-```bash
-ssh -i path/to/private_key ubuntu@<VM_PUBLIC_IP>
-```
-
-### 1. Ubuntu firewall me 80/443 allow karo
-```bash
-sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
-sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT
-sudo netfilter-persistent save
-```
-
-### 2. Java 25 install (SDKMAN se aasaan)
-```bash
-sudo apt update && sudo apt install -y zip unzip curl git
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 25-tem
-java -version   # 25 dikhna chahiye
-```
-
-### 3. PostgreSQL install + DB banao
-```bash
-sudo apt install -y postgresql
-sudo -u postgres psql -c "CREATE DATABASE curio;"
-sudo -u postgres psql -c "CREATE USER curio WITH PASSWORD 'CHOOSE_A_STRONG_PASSWORD';"
-sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE curio TO curio;"
-sudo -u postgres psql -d curio -c "GRANT ALL ON SCHEMA public TO curio;"
-```
-
-### 4. Backend code lao + build
-```bash
-git clone <YOUR_GITHUB_REPO_URL> app
-cd app/auth
-chmod +x mvnw
-./mvnw clean package -DskipTests
-# JAR ban jayegi: target/auth-0.0.1-SNAPSHOT.jar
-```
-
-### 5. Backend ko service banao (always-on)
-`/etc/systemd/system/curio.service` banao:
-```bash
-sudo nano /etc/systemd/system/curio.service
-```
-Ye paste karo (apne values bharo):
-```ini
-[Unit]
-Description=Curio Backend
-After=network.target postgresql.service
-
-[Service]
-User=ubuntu
-WorkingDirectory=/home/ubuntu/app/auth
-ExecStart=/home/ubuntu/.sdkman/candidates/java/current/bin/java -jar target/auth-0.0.1-SNAPSHOT.jar
-Restart=always
-Environment=SPRING_PROFILES_ACTIVE=prod
-Environment=SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/curio
-Environment=SPRING_DATASOURCE_USERNAME=curio
-Environment=SPRING_DATASOURCE_PASSWORD=CHOOSE_A_STRONG_PASSWORD
-Environment=JWT_SECRET=ek-bahut-lamba-random-secret-kam-se-kam-32-chars-1234567890
-Environment=GOOGLE_CLIENT_ID=679235122244-sijko890pkmrj9s1udg36ag26mgr1q1n.apps.googleusercontent.com
-Environment=APP_CORS_ALLOWED_ORIGIN=https://REPLACE-WITH-YOUR.pages.dev
-
-[Install]
-WantedBy=multi-user.target
-```
-Phir:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now curio
-sudo systemctl status curio        # "active (running)" dikhna chahiye
-curl http://localhost:8080/api/auth/me   # 401 aana chahiye = chal raha hai
-```
-
-> `APP_CORS_ALLOWED_ORIGIN` abhi placeholder hai — Cloudflare URL milne ke baad (Part E) yahan daal ke `sudo systemctl restart curio` karna.
+1. [neon.tech](https://neon.tech) → **GitHub se sign up** (card nahi maangega).
+2. **Create project** (region apne paas ka, e.g. Singapore/Mumbai). Database name `curio` rakho (ya default).
+3. Project banते hi **Connection string** milega. Use **"parameters/JDBC"** view me dekho — tumhe ye 3 chahiye:
+   - **Host** (e.g. `ep-xxxx.ap-southeast-1.aws.neon.tech`)
+   - **User** + **Password**
+   - **Database** name
+4. In se **JDBC URL** banao (SSL zaroori hai Neon me):
+   ```
+   jdbc:postgresql://<HOST>/<DATABASE>?sslmode=require
+   ```
+   Ye URL + user + password Part C me lagenge.
 
 ---
 
-## Part D — Backend ko HTTPS do (Caddy + DuckDNS)
+## Part C — Backend: Render Web Service (Docker)
 
-### 1. Free domain (DuckDNS)
-1. [duckdns.org](https://www.duckdns.org) → Google/GitHub se login.
-2. Ek subdomain banao, e.g. **`curioapi`** → `curioapi.duckdns.org`.
-3. "current ip" me apne **VM ka Public IP** daal ke update karo.
+1. [render.com](https://render.com) → **GitHub se sign up** (no card).
+2. **New + → Web Service** → repo `anveetpal01/multi-domain-recommender-system` connect karo.
+3. **Settings:**
+   - **Branch:** `master`
+   - **Root Directory:** `auth`  ⬅️ (monorepo me backend yahan hai)
+   - **Runtime/Environment:** **Docker** (Render `auth/Dockerfile` khud detect karega)
+   - **Instance Type:** **Free**
+4. **Environment Variables** (Add karo):
+   | Key | Value |
+   | --- | --- |
+   | `SPRING_PROFILES_ACTIVE` | `prod` |
+   | `SPRING_DATASOURCE_URL` | `jdbc:postgresql://<HOST>/<DB>?sslmode=require` (Neon) |
+   | `SPRING_DATASOURCE_USERNAME` | Neon user |
+   | `SPRING_DATASOURCE_PASSWORD` | Neon password |
+   | `JWT_SECRET` | koi lamba random string (kam se kam 32 chars) |
+   | `GOOGLE_CLIENT_ID` | `679235122244-sijko890pkmrj9s1udg36ag26mgr1q1n.apps.googleusercontent.com` |
+   | `APP_CORS_ALLOWED_ORIGIN` | `https://PLACEHOLDER.onrender.com` (frontend URL milne ke baad update karenge) |
+5. **Create Web Service** → Render Docker image build karega (pehli baar 3-5 min). Done par URL milega, e.g. **`https://curio-api-xxxx.onrender.com`** — note kar lo.
+6. Test: browser me `https://curio-api-xxxx.onrender.com/api/auth/me` → **401** aana chahiye (matlab live hai).
 
-### 2. Caddy install (auto-HTTPS)
-```bash
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update && sudo apt install -y caddy
-```
-
-### 3. Caddyfile
-```bash
-sudo nano /etc/caddy/Caddyfile
-```
-Sab hata ke ye daalo (apna duckdns domain):
-```
-curioapi.duckdns.org {
-    reverse_proxy localhost:8080
-}
-```
-```bash
-sudo systemctl restart caddy
-```
-Caddy khud Let's Encrypt se **HTTPS certificate** le lega (1-2 min). Test:
-```bash
-curl https://curioapi.duckdns.org/api/auth/me   # 401 = HTTPS backend live ✅
-```
-
-Ab tumhara backend HTTPS pe hai: **`https://curioapi.duckdns.org`**
+> `PORT` set karne ki zaroorat nahi — Render khud deta hai, aur app `${PORT}` padh leta hai.
 
 ---
 
-## Part E — Frontend deploy (Cloudflare Pages)
+## Part D — Frontend: Render Static Site
 
-1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages → Create → Pages → Connect to Git** → apna GitHub repo chuno.
-2. **Build settings:**
-   - **Root directory (Advanced):** `curio-app`
-   - **Framework preset:** Vite (ya None)
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-3. **Environment variables** (Settings → Environment variables → Production) add karo:
-   - `VITE_API_BASE` = `https://curioapi.duckdns.org/api`
+1. Render → **New + → Static Site** → wahi repo connect karo.
+2. **Settings:**
+   - **Branch:** `master`
+   - **Root Directory:** `curio-app`  ⬅️
+   - **Build Command:** `npm install && npm run build`
+   - **Publish Directory:** `dist`
+3. **Environment Variables:**
+   - `VITE_API_BASE` = `https://curio-api-xxxx.onrender.com/api`  *(Part C wala backend URL + `/api`)*
    - `VITE_GOOGLE_CLIENT_ID` = `679235122244-sijko890pkmrj9s1udg36ag26mgr1q1n.apps.googleusercontent.com`
-4. **Save and Deploy** → 1-2 min me URL milega, e.g. **`https://curio-xxxx.pages.dev`** — note kar lo.
+4. **Create Static Site** → URL milega, e.g. **`https://curio-xxxx.onrender.com`** — note kar lo.
 
-> HashRouter use kiya hai, isliye Cloudflare pe koi SPA-redirect config ki zaroorat nahi — refresh pe 404 nahi aayega.
-
----
-
-## Part F — Aakhri wiring (zaroori, warna login fail hoga)
-
-### 1. Backend ko frontend ka URL batao (CORS)
-VM pe `curio.service` me `APP_CORS_ALLOWED_ORIGIN` ko apne Cloudflare URL pe set karo:
-```bash
-sudo nano /etc/systemd/system/curio.service
-# Environment=APP_CORS_ALLOWED_ORIGIN=https://curio-xxxx.pages.dev
-sudo systemctl daemon-reload && sudo systemctl restart curio
-```
-
-### 2. Google OAuth me prod URL allow karo
-[Google Cloud Console](https://console.cloud.google.com) → APIs & Services → Credentials → tumhara OAuth client → **Authorized JavaScript origins** me add karo:
-- `https://curio-xxxx.pages.dev`
-
-(consent screen agar "Testing" me hai to sirf test-users login kar payenge; sabke liye **Publish** karo.)
+> HashRouter use kiya hai, isliye koi SPA rewrite rule nahi chahiye — refresh pe 404 nahi aayega.
 
 ---
 
-## Part G — Test karo
+## Part E — Aakhri wiring (zaroori, warna login fail)
 
-1. Browser me apna **Cloudflare URL** kholo → login page aana chahiye.
-2. **Create account** (email/password) ya **Continue with Google** → onboarding → Home.
-3. Kuch save karo → logout → wapas login → saved items wahi milein (ab Postgres me per-user save ho rahe hain) ✅
-4. Phone pe bhi kholo — responsive UI.
+1. **Backend ko frontend ka URL batao (CORS):** Render → backend service → **Environment** → `APP_CORS_ALLOWED_ORIGIN` ko apne **frontend** URL pe set karo:
+   ```
+   APP_CORS_ALLOWED_ORIGIN=https://curio-xxxx.onrender.com
+   ```
+   Save → Render auto redeploy karega.
+2. **Google OAuth:** [Google Cloud Console](https://console.cloud.google.com) → APIs & Services → Credentials → OAuth client → **Authorized JavaScript origins** me add karo:
+   - `https://curio-xxxx.onrender.com`
+   - (consent screen "Testing" me ho to sirf added test-users; sabke liye **Publish** karo.)
+
+---
+
+## Part F — Test
+
+1. **Frontend URL** kholo → login page.
+2. **Create account** ya **Continue with Google** → onboarding → Home.
+   - (Pehli request slow ho sakti hai agar backend so gaya tha — ~50 sec wait, phir chalega.)
+3. Kuch save karo → logout → wapas login → saved items wahi (Neon Postgres me per-user) ✅
+4. Phone pe bhi kholo — responsive.
 
 ### Common errors
 | Dikkat | Fix |
 | --- | --- |
-| Login pe **CORS error** | `APP_CORS_ALLOWED_ORIGIN` me exact Cloudflare URL (https, no trailing slash) + service restart |
-| **Mixed content** blocked | Frontend `VITE_API_BASE` HTTPS hona chahiye (duckdns), HTTP nahi |
-| Google button kaam nahi | Google Console me Cloudflare URL "Authorized JavaScript origins" me + consent publish |
-| `/api/...` **502/timeout** | Backend service down — `sudo systemctl status curio`, `journalctl -u curio -e` |
-| DB error on start | `SPRING_DATASOURCE_*` env sahi? Postgres chalu? `sudo systemctl status postgresql` |
-| Caddy HTTPS nahi mila | DuckDNS IP sahi? Ports 80/443 VCN + iptables me open? `sudo journalctl -u caddy -e` |
+| Login pe **CORS error** | `APP_CORS_ALLOWED_ORIGIN` = exact frontend URL (https, no trailing slash) → redeploy |
+| Backend pehli request bahut slow / 502 | Free service so gaya tha — thodi der baad retry (cold start) |
+| **DB connection** error | `SPRING_DATASOURCE_URL` me `?sslmode=require` hai? Neon user/pass sahi? |
+| Backend **OOM / crash** | Free 512MB — Dockerfile me `MaxRAMPercentage` already set hai; logs dekho (Render → Logs) |
+| Google button kaam nahi | Google Console me frontend URL "Authorized JavaScript origins" me + consent publish |
+| Build fail (Docker) | Render → Logs; agar `eclipse-temurin:25` image issue ho to Dockerfile me `25` ko `21` kar do |
 
 ### Update kaise karein (baad me)
-- **Frontend**: GitHub pe push → Cloudflare auto re-deploy.
-- **Backend**: VM pe `cd app && git pull && cd auth && ./mvnw clean package -DskipTests && sudo systemctl restart curio`
+- GitHub pe push karo → Render (frontend + backend dono) **auto re-deploy** kar dega.
 
 ---
 
-Bas! Ye truly-free, always-on, HTTPS setup hai. Kahin atko (koi command error, ya koi status) — exact output bhej dena, main wahin se solve kar dunga. 🚀
-
+Bas! Ye **truly-free, no-credit-card, HTTPS** setup hai — sab Render + Neon, GitHub se auto-deploy. Kisi step pe error/log aaye to bhej dena, main wahin se solve kar dunga. 🚀
