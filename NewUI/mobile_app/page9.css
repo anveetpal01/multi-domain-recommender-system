@@ -1,0 +1,3297 @@
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: relative;
+width: 780px;
+height: 484px;
+
+
+
+/* Background+Border+Shadow */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px;
+gap: 5px;
+
+width: 780px;
+height: 484px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 726px;
+height: 37px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Three themes, one system */
+
+width: 726px;
+height: 37px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 726px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Every screen is driven by CSS variables — swap the palette, the whole app re-skins. */
+
+width: 726px;
+height: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+width: 726px;
+height: 275px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+gap: 3px;
+
+position: absolute;
+height: 241px;
+left: 0px;
+right: 492.59px;
+top: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+background: #F2F0E9;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 14px;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Paper · light */
+
+width: 195.41px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9.5px;
+line-height: 13px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.14px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 6px;
+
+width: 195.41px;
+height: 74px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+background: #F2F0E9;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* bg */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #F2F0E9 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 36.98px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 36.98px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* surface */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #FBFAF6 */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+background: #16150F;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ink */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #16150F */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+background: #DDD8CD;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* line */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #DDD8CD */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flame Pea */
+background: #D8512E;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* accent */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #D8512E */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 13px 0px 0px;
+
+width: 195.41px;
+height: 79px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Aa — A Theory of Tides */
+
+width: 195.41px;
+height: 66px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 33px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Spectral display · Hanken Grotesk body · JetBrains Mono labels */
+
+width: 195.41px;
+height: 28px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+gap: 3px;
+
+position: absolute;
+height: 241px;
+left: 249.41px;
+right: 243.18px;
+top: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+background: #141310;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangitoto */
+border: 1px solid #2E2B24;
+border-radius: 14px;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Ink · dark */
+
+width: 195.41px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9.5px;
+line-height: 13px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.14px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White Rock */
+color: #F0ECE0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 6px;
+
+width: 195.41px;
+height: 74px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+background: #141310;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* bg */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #141310 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6E675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 36.98px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zeus */
+background: #1E1C17;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 36.98px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* surface */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #1E1C17 */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6E675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White Rock */
+background: #F0ECE0;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ink */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #F0ECE0 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6E675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangitoto */
+background: #2E2B24;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* line */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #2E2B24 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6E675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Red Damask */
+background: #E2683F;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* accent */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #E2683F */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6E675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 13px 0px 0px;
+
+width: 195.41px;
+height: 79px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Aa — A Theory of Tides */
+
+width: 195.41px;
+height: 66px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 33px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White Rock */
+color: #F0ECE0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Spectral display · Hanken Grotesk body · JetBrains Mono labels */
+
+width: 195.41px;
+height: 28px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zorba */
+color: #A39C90;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+gap: 3px;
+
+position: absolute;
+height: 241px;
+left: 498.81px;
+right: -6.22px;
+top: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Athens Gray */
+background: #EDF0F3;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Geyser */
+border: 1px solid #DBE1E7;
+border-radius: 14px;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mist · cool */
+
+width: 195.41px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9.5px;
+line-height: 13px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.14px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Bunker */
+color: #141A20;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 6px;
+
+width: 195.41px;
+height: 74px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Athens Gray */
+background: #EDF0F3;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* bg */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #EDF0F3 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Gray Chateau */
+color: #99A2AD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 36.98px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White */
+background: #FFFFFF;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 36.98px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* surface */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 36.98px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #FFFFFF */
+
+width: 36.98px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Gray Chateau */
+color: #99A2AD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Bunker */
+background: #141A20;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ink */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #141A20 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Gray Chateau */
+color: #99A2AD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Geyser */
+background: #DBE1E7;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* line */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #DBE1E7 */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Gray Chateau */
+color: #99A2AD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 63px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+width: 33.62px;
+height: 36px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flame Pea */
+background: #D8512E;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pablo 18% */
+border: 1px solid rgba(120, 110, 95, 0.18);
+border-radius: 7px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 0px 0px;
+
+width: 33.62px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* accent */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.48px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 33.62px;
+height: 11px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #D8512E */
+
+width: 33.62px;
+height: 11px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Gray Chateau */
+color: #99A2AD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 13px 0px 0px;
+
+width: 195.41px;
+height: 79px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Aa — A Theory of Tides */
+
+width: 195.41px;
+height: 66px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 33px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Bunker */
+color: #141A20;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 195.41px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Spectral display · Hanken Grotesk body · JetBrains Mono labels */
+
+width: 195.41px;
+height: 28px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Shuttle Gray */
+color: #5A6571;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Horizontal Divider */
+
+width: 726px;
+height: 1px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+background: #DDD8CD;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 19px 0px 0px;
+
+width: 726px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Domain accents */
+
+width: 726px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9.5px;
+line-height: 13px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.14px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 9px 0px 0px;
+gap: 26px;
+
+width: 726px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 11px;
+
+width: 83px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background */
+
+width: 34px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Brandy Punch */
+background: #C17A2B;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Films */
+
+width: 31px;
+height: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/SemiBold */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #C17A2B */
+
+width: 38px;
+height: 12px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 12px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 11px;
+
+width: 83px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background */
+
+width: 34px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Blush */
+background: #BC436B;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Songs */
+
+width: 35px;
+height: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/SemiBold */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #BC436B */
+
+width: 38px;
+height: 12px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 12px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 11px;
+
+width: 83px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background */
+
+width: 34px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Goblin */
+background: #3F7A57;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Books */
+
+width: 37px;
+height: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/SemiBold */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 38px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #3F7A57 */
+
+width: 38px;
+height: 12px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 12px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 11px;
+
+width: 85px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background */
+
+width: 34px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/San Marino */
+background: #3E66B0;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 40px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 40px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Essays */
+
+width: 40px;
+height: 17px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/SemiBold */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 40px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* #3E66B0 */
+
+width: 38px;
+height: 12px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 12px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Design tokens */
+
+position: absolute;
+width: 102.17px;
+height: 15px;
+left: 0px;
+top: -26px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.32px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zeus 55% */
+color: rgba(40, 36, 30, 0.55);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;

@@ -1,0 +1,792 @@
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: absolute;
+width: 1280px;
+height: 998px;
+left: 9101px;
+top: 258px;
+
+
+
+/* Background+Shadow */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 1280px;
+height: 998px;
+min-height: 900px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+background: #F2F0E9;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 16px 40px rgba(0, 0, 0, 0.08);
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 218px;
+height: 998px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+width: 218px;
+height: 900px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 38px 44px;
+gap: 4px;
+
+width: 1062px;
+height: 998px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 986px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Discover */
+
+width: 986px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+display: flex;
+align-items: center;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 18px;
+
+width: 986px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Search */
+
+width: 986px;
+height: 52px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 34px;
+line-height: 52px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 18px;
+gap: 12px;
+
+width: 640px;
+max-width: 640px;
+height: 53px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+background: #F2F0E9;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+border: 1px solid #16150F;
+border-radius: 13px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* SVG */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+border: 1.35px solid #6B675C;
+
+
+/* Vector */
+
+position: absolute;
+left: 69.59%;
+right: 12.5%;
+top: 69.58%;
+bottom: 12.5%;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+border: 1.35px solid #6B675C;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 58px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* stillness */
+
+width: 58px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 14px 0px 0px;
+gap: 0px 9px;
+
+width: 986px;
+height: 53px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 74px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* the sea */
+
+width: 40px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 79px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* stillness */
+
+width: 45px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 80px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* memory */
+
+width: 46px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 64px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* maps */
+
+width: 30px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 83px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* patience */
+
+width: 49px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 61px;
+height: 39px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* craft */
+
+width: 27px;
+height: 21px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Italic */
+font-family: 'Spectral';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px 0px 0px;
+
+width: 986px;
+height: 39px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 5 results across your library */
+
+width: 986px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+display: flex;
+align-items: center;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+width: 986px;
+height: 676px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 0px;
+right: 756px;
+top: 14px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 252px;
+right: 504px;
+top: 14px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 504px;
+right: 252px;
+top: 14px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 756px;
+right: 0px;
+top: 14px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 0px;
+right: 756px;
+top: 356px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* 06 · Search & discovery */
+
+position: absolute;
+width: 181.15px;
+height: 15px;
+left: 0px;
+top: -26px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.32px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zeus 55% */
+color: rgba(40, 36, 30, 0.55);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;

@@ -1,0 +1,94 @@
+/* ============================================================
+   Curio — Design Tokens
+   "Three themes, one system" — every screen is driven by CSS
+   variables. Swap [data-theme] and the whole app re-skins.
+   Source values taken from the Figma design-tokens screen.
+   ============================================================ */
+
+:root,
+[data-theme='paper'] {
+  /* PAPER · LIGHT */
+  --bg: #f2f0e9;
+  --surface: #fbfaf6;
+  --surface-2: #ecebe2;
+  --surface-3: #e4e2d8;
+  --ink: #16150f;
+  --ink-soft: #5c594f;
+  --ink-faint: #918d82;
+  --line: #ddd8cd;
+  --accent: #d8512e;
+  --accent-ink: #ffffff;
+  --shadow: 0 1px 2px rgba(22, 21, 15, 0.04), 0 12px 32px rgba(22, 21, 15, 0.06);
+  --scrim: rgba(22, 21, 15, 0.04);
+}
+
+[data-theme='ink'] {
+  /* INK · DARK */
+  --bg: #141318;
+  --surface: #1e1c17;
+  --surface-2: #26241f;
+  --surface-3: #2e2c26;
+  --ink: #f0ece0;
+  --ink-soft: #b6b1a4;
+  --ink-faint: #6e6a60;
+  --line: #2e2c26;
+  --accent: #e2683f;
+  --accent-ink: #15120d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.45);
+  --scrim: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme='mist'] {
+  /* MIST · COOL */
+  --bg: #edf0f3;
+  --surface: #ffffff;
+  --surface-2: #e3e8ed;
+  --surface-3: #d9e0e6;
+  --ink: #141a20;
+  --ink-soft: #56606b;
+  --ink-faint: #8a949e;
+  --line: #dbe1e7;
+  --accent: #d8512e;
+  --accent-ink: #ffffff;
+  --shadow: 0 1px 2px rgba(20, 26, 32, 0.04), 0 12px 32px rgba(20, 26, 32, 0.08);
+  --scrim: rgba(20, 26, 32, 0.04);
+}
+
+:root {
+  /* Domain accents — constant across themes */
+  --films: #c17a2b;
+  --songs: #bc436b;
+  --books: #3f7a57;
+  --essays: #3e66b0;
+
+  /* Type families */
+  --font-display: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-body: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Spacing scale */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* Radii */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Layout */
+  --maxw: 1200px;
+  --sidebar-w: 232px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 0.28s;
+}

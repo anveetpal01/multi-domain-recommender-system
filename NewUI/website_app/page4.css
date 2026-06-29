@@ -1,0 +1,772 @@
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: absolute;
+width: 1280px;
+height: 980px;
+left: 6280px;
+top: 264px;
+
+
+
+/* Background+Shadow */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 1280px;
+height: 980px;
+min-height: 980px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+background: #F2F0E9;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 16px 40px rgba(0, 0, 0, 0.08);
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 218px;
+height: 980px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+width: 218px;
+height: 980px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 38px 44px;
+gap: 4px;
+
+width: 1062px;
+height: 980px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 986px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Browse */
+
+width: 986px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+display: flex;
+align-items: center;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Dawn */
+color: #A6A096;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 986px;
+height: 52px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Films */
+
+width: 986px;
+height: 52px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spectral/Light */
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 300;
+font-size: 34px;
+line-height: 52px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+color: #16150F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 2px 0px 0px;
+
+width: 986px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Recommended for you across the films in your library. */
+
+width: 986px;
+height: 18px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Regular */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 13.5px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 22px 3.41061e-13px 0px 0px;
+gap: 419.59px;
+
+width: 986px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+margin: 0 auto;
+width: 458px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 48px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Rangoon Green */
+background: #16150F;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* All */
+
+width: 16px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/SemiBold title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Pampas */
+color: #F2F0E9;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 79px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* the sea */
+
+width: 45px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Medium title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 81px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* memory */
+
+width: 47px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Medium title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 80px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* solitude */
+
+width: 46px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Medium title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 64px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* craft */
+
+width: 30px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Medium title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 61px;
+height: 34px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Spring Wood */
+background: #FBFAF6;
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* light */
+
+width: 27px;
+height: 16px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Hanken Grotesk/Medium title */
+font-family: 'Hanken Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Border */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 13px;
+
+margin: 0 auto;
+width: 111px;
+height: 31px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Moon Mist */
+border: 1px solid #DDD8CD;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* BEST MATCH ▾ */
+
+width: 83px;
+height: 13px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+display: flex;
+align-items: center;
+letter-spacing: 1px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Flint */
+color: #6B675C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+width: 986px;
+height: 682px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 0px;
+right: 756px;
+top: 20px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 252px;
+right: 504px;
+top: 20px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 504px;
+right: 252px;
+top: 20px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 756px;
+right: 0px;
+top: 20px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 0px;
+right: 756px;
+top: 362px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* Overlay+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 320px;
+left: 252px;
+right: 504px;
+top: 362px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/White 30% */
+background: rgba(255, 255, 255, 0.3);
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Black 50% */
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+
+
+/* 04 · Browse — Films */
+
+position: absolute;
+width: 150.12px;
+height: 15px;
+left: 0px;
+top: -26px;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/JetBrains Mono/Regular upper */
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 1.32px;
+text-transform: uppercase;
+
+/* 8cc05b41-960a-423c-96f2-e28d02605a74.claudeusercontent.com/Zeus 55% */
+color: rgba(40, 36, 30, 0.55);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
