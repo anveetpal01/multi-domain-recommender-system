@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from '../shared/AuthContext'
-import { useLibrary } from '../shared/LibraryContext'
 import { cx } from '../shared/util'
 import s from './Login.module.css'
 import { useEffect, useRef } from 'react'
 
 export default function Login() {
-  const { login, register, loginWithGoogle, isAuthed } = useAuth()
-  const { setName, onboarded } = useLibrary()
+  const { login, register, loginWithGoogle, isAuthed, onboarded } = useAuth()
   const nav = useNavigate()
   const googleBtnRef = useRef(null)
   const [mode, setMode] = useState('signup')
@@ -35,8 +33,7 @@ export default function Login() {
         client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
         callback: async (res) => {
           try {
-            const data = await loginWithGoogle(res.credential)
-            setName(data.name)
+            await loginWithGoogle(res.credential)
             nav(onboarded ? '/' : '/onboarding')
           } catch (err) {
             setError(err.message)
@@ -59,10 +56,8 @@ export default function Login() {
     setError('')
     setBusy(true)
     try {
-      const data = isSignup
-        ? await register(email, password, name.trim() || email.split('@')[0])
-        : await login(email, password)
-      setName(data.name)
+      if (isSignup) await register(email, password, name.trim() || email.split('@')[0])
+      else await login(email, password)
       nav(onboarded ? '/' : '/onboarding')
     } catch (err) {
       setError(err.message)

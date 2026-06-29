@@ -12,6 +12,14 @@ export function AuthProvider({ children }) {
       return null
     }
   })
+  const [onboarded, setOnboardedState] = useState(
+    () => localStorage.getItem('curio-onboarded') === 'true',
+  )
+
+  function setOnboarded() {
+    setOnboardedState(true)
+    localStorage.setItem('curio-onboarded', 'true')
+  }
 
   function persist(data) {
     const nextUser = { name: data.name, email: data.email, role: data.role }
@@ -24,8 +32,10 @@ export function AuthProvider({ children }) {
   function logout() {
     setToken(null)
     setUser(null)
+    setOnboardedState(false)
     localStorage.removeItem('curio-token')
     localStorage.removeItem('curio-user')
+    localStorage.removeItem('curio-onboarded')
   }
 
   useEffect(() => {
@@ -54,7 +64,7 @@ export function AuthProvider({ children }) {
 }
 
   return (
-    <AuthContext.Provider value={{ token, user, isAuthed: !!token, login, register, loginWithGoogle, logout }}>
+    <AuthContext.Provider value={{ token, user, isAuthed: !!token, login, register, loginWithGoogle, logout, onboarded, setOnboarded }}>
       {children}
     </AuthContext.Provider>
   )
