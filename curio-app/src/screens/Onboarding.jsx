@@ -47,7 +47,7 @@ export default function Onboarding() {
       <div className={s.inner}>
         <header className={s.head}>
           <img src="/logo.png" alt="Home" className={s.brandImg} />
-          <p className="eyebrow">Step 1 of 3</p>
+          <p className="eyebrow">Getting started</p>
           <h1 className={s.title}>Pick a few you love</h1>
           <p className={s.sub}>
             We&apos;ll trace the connections between them. Choose at least three.

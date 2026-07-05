@@ -16,9 +16,18 @@ export function AuthProvider({ children }) {
     () => localStorage.getItem('curio-onboarded') === 'true',
   )
 
-  function setOnboarded() {
+  function rememberOnboarded() {
     setOnboardedState(true)
     localStorage.setItem('curio-onboarded', 'true')
+  }
+
+  async function setOnboarded() {
+    rememberOnboarded()
+    try {
+      await apiPost('/auth/onboarded', {}, token)
+    } catch {
+      /* best effort — the flag is kept locally either way */
+    }
   }
 
   function persist(data) {
@@ -27,6 +36,7 @@ export function AuthProvider({ children }) {
     setUser(nextUser)
     localStorage.setItem('curio-token', data.token)
     localStorage.setItem('curio-user', JSON.stringify(nextUser))
+    if (data.onboarded) rememberOnboarded()
   }
 
   function logout() {
@@ -40,9 +50,13 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (!token) return
-    apiGet('/auth/me', token).catch((err) => {
-      if (err.status === 401) logout()
-    })
+    apiGet('/auth/me', token)
+      .then((me) => {
+        if (me?.onboarded) rememberOnboarded()
+      })
+      .catch((err) => {
+        if (err.status === 401) logout()
+      })
   }, [token])
 
   async function login(email, password) {

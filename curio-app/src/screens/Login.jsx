@@ -16,6 +16,33 @@ export default function Login() {
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
 
+  useEffect(() => {
+    const id = setInterval(() => {
+      if (window.google && googleBtnRef.current) {
+        clearInterval(id)
+        window.google.accounts.id.initialize({
+          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+          callback: async (res) => {
+            try {
+              const data = await loginWithGoogle(res.credential)
+              nav(data?.onboarded ? '/' : '/onboarding')
+            } catch (err) {
+              setError(err.message)
+            }
+          },
+        })
+        window.google.accounts.id.renderButton(googleBtnRef.current, {
+          theme: 'outline',
+          size: 'large',
+          width: 320,
+          text: 'continue_with',
+        })
+      }
+    }, 100)
+    return () => clearInterval(id)
+  }, [])
+
+  // After every hook — an early return above a hook crashes React on re-render.
   if (isAuthed) return <Navigate to={onboarded ? '/' : '/onboarding'} replace />
 
   const isSignup = mode === 'signup'
@@ -25,40 +52,15 @@ export default function Login() {
     setError('')
   }
 
-  useEffect(() => {
-  const id = setInterval(() => {
-    if (window.google && googleBtnRef.current) {
-      clearInterval(id)
-      window.google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
-        callback: async (res) => {
-          try {
-            await loginWithGoogle(res.credential)
-            nav(onboarded ? '/' : '/onboarding')
-          } catch (err) {
-            setError(err.message)
-          }
-        },
-      })
-      window.google.accounts.id.renderButton(googleBtnRef.current, {
-        theme: 'outline',
-        size: 'large',
-        width: 320,
-        text: 'continue_with',
-      })
-    }
-  }, 100)
-  return () => clearInterval(id)
-}, [])
-
   async function submit(e) {
     e.preventDefault()
     setError('')
     setBusy(true)
     try {
-      if (isSignup) await register(email, password, name.trim() || email.split('@')[0])
-      else await login(email, password)
-      nav(onboarded ? '/' : '/onboarding')
+      const data = isSignup
+        ? await register(email, password, name.trim() || email.split('@')[0])
+        : await login(email, password)
+      nav(data?.onboarded ? '/' : '/onboarding')
     } catch (err) {
       setError(err.message)
     } finally {
