@@ -19,8 +19,8 @@ export const DOMAINS = {
 
 export const DOMAIN_ORDER = ['film', 'song', 'book', 'essay']
 
-// Base catalog. Films here are an offline-safe fallback; the TMDB module
-// enriches the film domain with live posters at runtime when online.
+// Base catalog — the offline-safe fallback. The server's /api/catalog is the
+// source of truth (seeded from these JSONs, films refreshed from TMDB there).
 export const baseCatalog = [
   ...filmsData,
   ...songsData,

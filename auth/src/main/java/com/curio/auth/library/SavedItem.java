@@ -35,6 +35,8 @@ public class SavedItem {
     @Column(length = 1000)
     private String cover;
 
+    // "year" is a reserved word in H2 (local dev DB) — map to a safe name.
+    @Column(name = "release_year")
     private Integer year;
 
     private String meta;

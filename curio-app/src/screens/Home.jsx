@@ -1,9 +1,10 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCatalog } from '../shared/CatalogContext'
 import { useLibrary } from '../shared/LibraryContext'
 import { useAuth } from '../shared/AuthContext'
 import { topPick, crossings, recommend } from '../shared/recommender'
+import { apiGet } from '../shared/api'
 import { DOMAINS, accentFor } from '../data/catalog'
 import { ItemCard, CoverTile } from '../shared/ItemCard'
 import { SearchIcon, ArrowIcon } from '../shared/ui'
@@ -18,25 +19,55 @@ const singular = (t) => {
 export default function Home() {
   const { catalog } = useCatalog()
   const { taste, liked, isSaved, toggleSave } = useLibrary()
-  const { user } = useAuth()
+  const { user, token } = useAuth()
   const nav = useNavigate()
+
+  // Server-side hybrid recommendations (content + collaborative + popularity).
+  // The client-side recommender stays as an instant fallback while the free
+  // instance wakes up or when offline.
+  const [feed, setFeed] = useState(null)
+  useEffect(() => {
+    if (!token) return
+    let active = true
+    apiGet('/recommendations/home', token)
+      .then((f) => {
+        if (active && f) setFeed(f)
+      })
+      .catch(() => {})
+    return () => {
+      active = false
+    }
+  }, [token, liked.length])
 
   const excludeIds = useMemo(() => liked.map((i) => i.id), [liked])
 
-  const pick = useMemo(
+  const localPick = useMemo(
     () => topPick(catalog, taste, { excludeIds }),
     [catalog, taste, excludeIds],
   )
-  const threads = useMemo(
+  const localThreads = useMemo(
     () => crossings(catalog, taste, { excludeIds, perThread: 4, threads: 2 }),
     [catalog, taste, excludeIds],
   )
-  const filmRow = useMemo(
+  const localFilmRow = useMemo(
     () => recommend(catalog, taste, { types: ['film'], excludeIds, limit: 5 }),
     [catalog, taste, excludeIds],
   )
 
+  const pick = feed?.pick || localPick
+  const threads = feed?.threads?.length ? feed.threads : localThreads
+  const filmRow = feed?.rows?.film?.length ? feed.rows.film.slice(0, 5) : localFilmRow
+
   const matched = pick ? (pick.tags || []).filter((t) => taste[t]) : []
+  const reasonLines = pick
+    ? pick.reasons?.length
+      ? pick.reasons
+      : [
+          matched.length > 0 &&
+            `Threads of ${matched.slice(0, 2).join(' and ')} run through your library.`,
+          `A ${singular(pick.type).toLowerCase()} that sits exactly in your register.`,
+        ].filter(Boolean)
+    : []
 
   return (
     <div className={cxPage}>
@@ -71,10 +102,9 @@ export default function Home() {
                 <span className="eyebrow"> % match for you</span>
               </p>
               <ul className={s.reasons}>
-                {matched.length > 0 && (
-                  <li>Threads of {matched.slice(0, 2).join(' and ')} run through your library.</li>
-                )}
-                <li>A {singular(pick.type).toLowerCase()} that sits exactly in your register.</li>
+                {reasonLines.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
               </ul>
               <div className={s.heroActions}>
                 <button

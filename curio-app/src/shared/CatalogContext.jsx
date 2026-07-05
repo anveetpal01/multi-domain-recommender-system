@@ -1,28 +1,33 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { baseCatalog } from '../data/catalog'
-import { fetchFilms } from '../data/tmdb'
+import { apiGet } from './api'
+import { useAuth } from './AuthContext'
 
 const CatalogContext = createContext(null)
 
 export function CatalogProvider({ children }) {
+  const { token } = useAuth()
   const [catalog, setCatalog] = useState(baseCatalog)
   const [filmsLive, setFilmsLive] = useState(false)
 
+  // The server owns the catalog (seeded domains + TMDB films fetched
+  // server-side, so no API key ships in this bundle). Refetch on login too —
+  // that's the moment we know the backend is awake.
   useEffect(() => {
     let active = true
-    fetchFilms({ pages: 3 })
-      .then((films) => {
-        if (!active || !films.length) return
-        setCatalog((prev) => [...films, ...prev.filter((i) => i.type !== 'film')])
-        setFilmsLive(true)
+    apiGet('/catalog')
+      .then((items) => {
+        if (!active || !Array.isArray(items) || !items.length) return
+        setCatalog(items)
+        setFilmsLive(items.some((i) => i.id?.startsWith('film-tmdb-')))
       })
       .catch(() => {
-        /* offline / API down — keep the bundled fallback films */
+        /* offline / backend waking — the bundled fallback keeps the app usable */
       })
     return () => {
       active = false
     }
-  }, [])
+  }, [token])
 
   return (
     <CatalogContext.Provider value={{ catalog, filmsLive }}>

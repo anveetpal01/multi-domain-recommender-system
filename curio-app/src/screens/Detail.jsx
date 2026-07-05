@@ -1,8 +1,10 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { useCatalog } from '../shared/CatalogContext'
 import { useLibrary } from '../shared/LibraryContext'
+import { useAuth } from '../shared/AuthContext'
 import { matchScore, withScores } from '../shared/recommender'
+import { apiGet } from '../shared/api'
 import { CoverTile } from '../shared/ItemCard'
 import { DOMAINS, accentFor } from '../data/catalog'
 import { EmptyState } from '../shared/ui'
@@ -19,13 +21,14 @@ export default function Detail() {
   const nav = useNavigate()
   const { catalog } = useCatalog()
   const { taste, liked, isSaved, toggleSave } = useLibrary()
+  const { token } = useAuth()
 
   const item = useMemo(
     () => catalog.find((i) => i.id === decoded) || liked.find((i) => i.id === decoded),
     [catalog, liked, decoded],
   )
 
-  const related = useMemo(() => {
+  const localRelated = useMemo(() => {
     if (!item) return []
     const list = catalog.filter(
       (i) => i.id !== item.id && (i.tags || []).some((t) => (item.tags || []).includes(t)),
@@ -34,6 +37,25 @@ export default function Detail() {
       .sort((a, b) => b.score - a.score)
       .slice(0, 6)
   }, [catalog, item, taste])
+
+  // Server-side "similar" (tag similarity + co-save behaviour across users);
+  // the locally computed list covers the gap while the request is in flight.
+  const [serverRelated, setServerRelated] = useState(null)
+  useEffect(() => {
+    setServerRelated(null)
+    if (!token || !decoded) return
+    let active = true
+    apiGet(`/recommendations/similar/${encodeURIComponent(decoded)}?limit=6`, token)
+      .then((r) => {
+        if (active && Array.isArray(r) && r.length) setServerRelated(r)
+      })
+      .catch(() => {})
+    return () => {
+      active = false
+    }
+  }, [token, decoded])
+
+  const related = serverRelated || localRelated
 
   if (!item) {
     return (

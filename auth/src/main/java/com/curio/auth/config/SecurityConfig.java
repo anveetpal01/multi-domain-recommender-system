@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -38,6 +39,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())   // stateless JWT API me CSRF ki zaroorat nahi
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/register", "/api/auth/login", "/api/auth/google").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/catalog/**").permitAll()   // public, non-sensitive
                         .requestMatchers("/h2-console/**").permitAll()   // sirf dev
                         .anyRequest().authenticated())
                 .exceptionHandling(ex -> ex.authenticationEntryPoint(

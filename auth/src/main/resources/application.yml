@@ -22,3 +22,6 @@ app:
     allowed-origin: ${APP_CORS_ALLOWED_ORIGIN:http://localhost:5173}
   google:
     client-id: ${GOOGLE_CLIENT_ID:679235122244-sijko890pkmrj9s1udg36ag26mgr1q1n.apps.googleusercontent.com}
+  tmdb:
+    # Server-side only — keeps the key out of the public JS bundle.
+    api-key: ${TMDB_API_KEY:c2ddae4da825098d489b772dd70a49f8}
